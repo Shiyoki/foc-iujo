@@ -1,25 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import About from "./components/about";
+import Bio from "./components/bio";
+import Exp from "./components/exp";
+import Hobby from "./components/hobby";
+import Interest from "./components/interest";
+import Tech from "./components/tech";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+export default function Routes(){
+    return(
+      <div className="grid grid-rows-6">
+        <div>
+          <About />
+        </div>
+        <div>
+          <Bio/>
+        </div>
+        <div>
+          <Exp />
+        </div>
+        <div>
+          <Interest />
+        </div>
+        <div>
+          <Tech />
+        </div>
+        <div>
+          <Hobby />
+        </div>
+      </div>
+      
+    )
 }
-
-export default App;
